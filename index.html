@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f27cd97a23.js" crossorigin="anonymous"></script>
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="Imagenes/Logo.png" alt="Logo Alura">
+    </header>
+
+    <main>
+        <section class="seccion-1">
+            <textarea cols="70" rows="10" name="texto" id="ingresarTexto" class="contenedor" cols="70" rows="10" placeholder="Ingrese el texto aqui"></textarea> 
+            <div class="exclamacion">
+                <img src="Imagenes/bi_exclamation-circle-fill.png" alt="Signo de exclamación" class="signo">
+                <img src="Imagenes/Solo letras minúsculas y sin acentos.png" alt="">
+            </div>
+            <div class="contenedor-botones">
+                 <img src="Imagenes/Button.png" alt="Encriptar" class="encriptar" onclick="encriptar()" id="encriptar">
+                 <img src="Imagenes/Button (2).png" alt="Desencriptar" class="desencrip" onclick="desencriptar()" id="desencrip">
+            </div>
+        </section>
+
+        <section class="seccion-2">
+            <div class="rectangulo">
+                <img src="Imagenes/Muñeco.png" alt="Chico con una lupa" class="muñeco" id="munie">
+                
+                <div class="mensajes">
+                    <img src="Imagenes/Ningún mensaje fue encontrado.png" class="no-mensaje" id="no-mensaje">
+                    <textarea class="solucion" id="solucion" cols="80" rows="6" placeholder="Ingresa el texto que desees encriptar o desencriptar."></textarea>
+                    
+                </div>
+
+                <img src="Imagenes/Button (3).png" class="btn-copiar" id="copiar" onclick="copy()">
+              
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="copyright">&copy; 2024 - Alejandra Vazquez</p></li>
+        <a href="https://www.linkedin.com/in/alejandra-vazquez-4ba5b0281/"class="link-red"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/AleVaz70" class="link-red" ><i class="fa-brands fa-square-github"></i></a>
+       
+    </footer>
+    <script type="text/javascript" src="encrip.js"></script>
+</body> 
+</html>
